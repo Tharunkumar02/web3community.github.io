@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Picker</title>
-    <script src="https://kit.fontawesome.com/bfe889eafa.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/bfe889eafa.js" crossorigin="anonymous"></script>
+
+  <title>login</title>
+    <link href="login.css" rel="stylesheet">
+    
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="sliders">
-            <label>Red</label>
-            <input type="range" min="0" max="255" value="0" oninput="getValue()" id="red"/>
-            <label>Green</label>
-            <input type="range" min="0" max="255" value="0" oninput="getValue()" id="green"/>
-            <label>Blue</label>
-            <input type="range" min="0" max="255" value="0" oninput="getValue()" id="blue"/>
-            <label>Alpha</label>
-            <input type="range" min="0.1" max="1.0" step="0.1" value="1" oninput="getValue()" id="alpha">
-            <div class="output-box">
-                <div class="output">rgba(0,0,0,1)</div>
-                <div class="copybtn" onclick="copy()"><i id="cpy" class="fa fa-clone" aria-hidden="true"></i></div>
-            </div>
-        </div>
+  <div class="container">
+    <h2>Linked<span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></h2>
+    <div class="intro-text">
+      <h1>Sign in</h1>
+      <p>Stay updated on your professional world</p>
     </div>
-    <script src="script.js"></script>
+    <div class="inputs">
+      <div class="input">
+        <input type="text" name="email" id="email" required/>
+        <label for="email">
+         Email
+        </label>
+      </div>
+      <div class="input">
+        <input type="password" name="password" id="password" required/>
+        <label for="password">
+          Password
+        </label>
+      </div>
+    </div>
+    <a href="#" class="forgot-pass-link">Forgot password?</a>
+    <button>Sign in</button>
+    <p class="join-link">New to linkedIn? <a href="#">Join now</a></p>
+  </div>
 </body>
 </html>
